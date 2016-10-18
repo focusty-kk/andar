@@ -1,0 +1,25 @@
+{
+  "name": "demo",
+  "description": "demo",
+  "main": "index",
+  "authors": [
+    "yanghui"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "liuxiaoming"
+  ],
+  "homepage": "https://github.com/focusty-kk/andar",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies":{
+    "jquery":"*",
+    "bootstrap":"*"
+  }
+
+}
