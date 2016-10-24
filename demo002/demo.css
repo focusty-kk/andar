@@ -1,0 +1,49 @@
+.containt{
+    width: 1000px;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+}
+
+h2{
+    height: 24px;
+    line-height: 24px;
+    color: #696969;
+}
+.containt>p{
+    line-height: 14px;
+    color: #666;
+    text-indent: 20px;
+}
+.img-item{
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: inline-block;
+    margin: 4px;
+    transition: border ease-in 0.3s;
+}
+.img-item:hover{
+    border: 1px solid #f60;
+}
+
+
+.img-item img{
+    width: 100px;
+    height: 100px;
+}
+.img-item p{
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+
+.wrap{
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+
+
