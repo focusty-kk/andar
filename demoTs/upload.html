@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>upload</title>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+<style>
+    .img{
+        width: 100px;
+    }
+</style>
+<form action="" name="myForm" id="myForm">
+    <input id="file" type="file" multiple >
+    <input id="text" type="text" >
+
+    <div id="imgwrap" style="width: 600px; height: 100px"></div>
+
+    <button id="submit">提交按钮</button>
+</form>
+<script>
+
+/* 文件上传fileReader
+ * readAsDataURl()将文件读取地址,用于图片在页面预览
+ * readAsBinaryString()读取出2进制流
+ * readAsText() 读取字符
+ * */
+$(function(){
+    $("#file").on("change",function(){
+        var filelist = $("#file")[0].files;
+        $.each(filelist,function(i,item){
+            var fileread = new FileReader();
+            fileread.readAsDataURL(item);
+            fileread.onload=function(){
+                console.log(this.result);
+                var str = "<img class=\"img\" src='"+this.result+"'><img>";
+                $("#imgwrap").append($(str));
+            };
+        });
+    });
+});
+
+/* 文件上传Formdata;
+ * */
+function upload(){
+    var fileData = new FormData();
+    var filelist = $("#file")[0].files;
+    fileData.append("name",filelist[0]);
+    $.ajax({
+        url: "",
+        type: "POST",
+        data: fileData,
+        processData: false,  // 告诉jQuery不要去处理发送的数据
+        contentType: false   // 告诉jQuery不要去设置Content-Type请求头
+    });
+}
+</script>
+</body>
+</html>
