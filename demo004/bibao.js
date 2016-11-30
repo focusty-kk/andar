@@ -16,7 +16,7 @@ var Books = function(Newisbn,Newtitle,Newauthor){
     var bi = function(){
         isbn++;
         return isbn;
-    }
+    };
 
     return bi;
 
