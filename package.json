@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/focusty-kk/andar#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-uglify":"*",
+    "babel":"*",
+    "gulp-concat":"*",
+    "gulp-rename":"*"
   }
 }

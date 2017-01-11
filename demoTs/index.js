@@ -1,25 +1,14 @@
 /**
  * Created by yanghui on 2017/1/4.
  */
-function alphabetPosition(text) {
-    var txt = text.toLowerCase().split("");
-    var arrLetter = txt.filter(function (e) {
-        return /\w/.test(e);
-    });
-    var mm = 'abcdefghijklmnopqrstuvwxyz'.split("");
-
-
-    for (var j = 0; j < arrLetter.length; j++) {
-        for (var i = 0; i < mm.length; i++) {
-            if (arrLetter[j] == mm[i]) {
-                arrLetter[j]= i+1;
-                break;
-            }
-        }
+function nbYear(p0, percent, aug, p) {
+    var year;
+    if ((p0 * Math.pow((1 + percent), year) - aug*(p0 + year) == p)) {
+        return Math.ceil(year);
     }
-    return arrLetter.join(" ");
 }
 
+
 $(function(){
-    console.log(alphabetPosition("The sunset sets at twelve o' clock."));
+    console.log(nbYear(1500000, 2.5, 10000, 2000000));
 });
