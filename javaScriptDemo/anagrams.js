@@ -1,5 +1,5 @@
 /**
- * Created by yanghui on 2017/1/4.
+ * Created by yanghui on 2017/1/20.
  */
 function anagrams(word, words) {
     var mm = [];
@@ -19,7 +19,3 @@ function anagrams(word, words) {
     });
     return mm;
 }
-
-$(function(){
-    console.log(anagrams("te",["et","mt","etet"]));
-});
