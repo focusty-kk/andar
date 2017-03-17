@@ -21,14 +21,4 @@ module.exports = {
             { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
         ]
     }
-    //其它解决方案配置
-    //resolve: {
-    //    root: 'E:/github/flux-example/src', //绝对路径
-    //    extensions: ['', '.js', '.json', '.scss'],
-    //    alias: {
-    //        AppStore : 'js/stores/AppStores.js',
-    //        ActionType : 'js/actions/ActionType.js',
-    //        AppAction : 'js/actions/AppAction.js'
-    //    }
-    //}
 };
