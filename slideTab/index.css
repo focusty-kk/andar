@@ -1,0 +1,40 @@
+#container{width:1000px;margin:0 auto;}
+ul,li{padding:0;margin:0;list-style:none;}
+.tab .tab-card { position: relative; margin: 0; padding: 0; overflow: hidden; color: #999; }
+.tab .tab-card li { float: left; height: 40px; line-height: 40px; text-align: center; width: 160px; font-size: 18px; cursor: pointer; }
+.tab .tab-card li.cur { color: #DF3031; }
+.tab .tab-card li.back { padding: 0; height: 4px; background: #DF3031; position: absolute; bottom: 0px; z-index: 5; }
+.tab .tab-paper { position: relative; margin: 0; border: 1px #EEE solid; border-top: 1px solid #DF3031; padding: 40px 30px; overflow: hidden; }
+.tab .tab-paper .tp { display: none; margin: 0; }
+.tab .tab-paper .tp.cur { display: block; }
+
+.select-wrap{
+    width: 202px;
+    overflow: hidden;
+}
+.select-wrap .select-reset{
+    width: 200px;
+    height: 30px;
+    border:1px solid #ccc;
+    outline: none;
+    position: relative;
+}
+
+.select-wrap ul{
+    position: absolute;
+    overflow: hidden;
+}
+
+.select-wrap ul li{
+    width: 164px;
+    height:26px;
+    background: #c1c1c1;
+    padding: 2px 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.div{
+    width: 300px;
+    height: 150px;
+    border: 1px solid #ccc;
+}
