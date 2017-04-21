@@ -17,11 +17,11 @@ gulp.task("clean", function () {
 });
 
 gulp.task('build', function () {
-    return browserify({entries: './javaScriptDemo/moveZeros.js', debug: true})
+    return browserify({entries: './demoTs/index.js', debug: true})
         .transform("babelify", {presets: ["es2015"]})
         .bundle()
         .pipe(source('app.js'))
-        .pipe(gulp.dest('./javaScript'));
+        .pipe(gulp.dest('./demoTss'));
 });
 gulp.task('ugly',['build'], function () {
     return gulp.src("./javaScript/app.js")
