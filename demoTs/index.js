@@ -18,4 +18,7 @@ Object.defineProperty(obj, "str", {
 
 /*
 *这个推送2
+*
+*
+* 没错
 * */

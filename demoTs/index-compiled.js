@@ -20,6 +20,9 @@ Object.defineProperty(obj, "str", {
 
 /*
 *这个推送2
+*
+*
+* 没错
 * */
 
 //# sourceMappingURL=index-compiled.js.map
