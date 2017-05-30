@@ -1,1 +1,1 @@
-{"version":3,"sources":["test.js"],"names":[],"mappings":";;AAAA;;;;AAIA,QAAQ,GAAR,CAAY,GAAZ;AACA,QAAQ,GAAR,CAAY,GAAZ;AACA,QAAQ,GAAR,CAAY,GAAZ;AACA,QAAQ,GAAR,CAAY,GAAZ","file":"test-compiled.js","sourcesContent":["/**\n * Created by yanghui on 2017/1/7.\n */\n\nconsole.log(123);\nconsole.log(123);\nconsole.log(123);\nconsole.log(123);\n"]}
+{"version":3,"sources":["test.js"],"names":[],"mappings":"AAAA","file":"test-compiled.js","sourcesContent":["/**\n * Created by yanghui on 2017/1/7.\n */\n\n\n"]}
